@@ -2,29 +2,21 @@ import React from "react";
 
 export const Features = (props) => {
   return (
-    <section id="download" className="text-center">
-      <div className="download-text">
-        <p> Available Now</p>
-        <p>Download LOCK IN!</p>
+    <div id="features" className="text-center features">
+    <div className="container">
+      <div className="section-title">
+             </div>
+      <div className="container">        
+        {props.data
+          ? props.data.map((d, i) => (
+              <div key={i} className="card">
+                <h2>Meu Card</h2>
+                <p>Este é um exemplo de card com bordas arredondadas e sombra.</p>
+              </div>
+            ))
+          : "loading"}
       </div>
-      <img src="img/download_img.png" alt="app available"/>
-      {/* <div className="container">
-        <div className="col-md-10 col-md-offset-1 section-title">
-          <h2>Features</h2>
-        </div>
-        <div className="row">
-          {props.data
-            ? props.data.map((d, i) => (
-                <div key={`${d.title}-${i}`} className="col-xs-6 col-md-3">
-                  {" "}
-                  <i className={d.icon}></i>
-                  <h3>{d.title}</h3>
-                  <p>{d.text}</p>
-                </div>
-              ))
-            : "Loading..."}
-        </div>
-      </div> */}
-    </section>
+    </div>
+  </div>
   );
 };

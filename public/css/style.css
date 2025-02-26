@@ -244,6 +244,19 @@ header .intro-text {
 #features {
   background: #f6f6f6;
 }
+
+#features .box {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+#features .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px;
+}
 #features i.fa {
   font-size: 38px;
   margin-bottom: 20px;
@@ -255,6 +268,15 @@ header .intro-text {
   border-radius: 50%;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+.features .card {
+  width: 300px;
+  padding: 20px;
+  background-color: #FAF7F7;
+  border-radius: 16px; /* Bordas arredondadas */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Efeito de drop shadow do Figma */
+  text-align: center;
+  font-family: Arial, sans-serif;
 }
 /* About Section */
 #about {
@@ -403,6 +425,24 @@ header .intro-text {
   justify-content: space-between;
   align-items: center;
   background-color: #111336;
+  height: 670px;
+  padding-top: 10px;
+}
+#download img{
+  margin-right: 130px;
+}
+
+#download .download-text {
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  font-size: 65px;
+  color: #fff;
+  text-align: left;
+  font-weight: bolder;
+}
+
+#download .download-text span{
+  color: #F8B757;
 }
 
 /* Footer Section*/
