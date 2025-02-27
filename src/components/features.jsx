@@ -5,13 +5,21 @@ export const Features = (props) => {
     <div id="features" className="text-center features">
     <div className="container">
       <div className="section-title">
+        <h2>Key Features</h2>
              </div>
-      <div className="container">        
+      <div className="container-card ">        
         {props.data
-          ? props.data.map((d, i) => (
+          ? props.data.map((item, i) => (
               <div key={i} className="card">
-                <h2>Meu Card</h2>
-                <p>Este é um exemplo de card com bordas arredondadas e sombra.</p>
+                <div className="grid-container">
+                  <div className="icon">
+                    <p> icon </p>
+                    </div>
+                    <div className="text">
+                <h3 className="title">{item.title}</h3>
+                <p className="description">{item.text}</p>
+                </div>
+              </div>
               </div>
             ))
           : "loading"}
