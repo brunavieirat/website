@@ -13,7 +13,7 @@ export const Features = (props) => {
               <div key={i} className="card">
                 <div className="grid-container">
                   <div className="icon">
-                    <p> icon </p>
+                    <img src={item.icon} alt={item.title}/>
                     </div>
                     <div className="text">
                 <h3 className="title">{item.title}</h3>

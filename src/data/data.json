@@ -51,22 +51,22 @@
   },
   "Features": [
     {
-      "icon": "fa fa-comments-o",
+      "icon": "img/minimalist.svg",
       "title": "Minimalist & Distraction-Free",
       "text": "A simple, no-nonsense interface designed to keep you locked into your tasks."
     },
     {
-      "icon": "fa fa-bullhorn",
+      "icon": "img/calendar.svg",
       "title": "Unbreakable Time Locks",
       "text": "Once you commit to a session, there’s no way out until the time is up. No quitting, no distractions."
     },
     {
-      "icon": "fa fa-group",
+      "icon": "img/monetary.svg",
       "title": "Monetary Penalties",
       "text": "Set real financial consequences for breaking focus. If you fail to stick to your session, you pay the price—literally."
     },
     {
-      "icon": "fa fa-magic",
+      "icon": "img/discipline.svg",
       "title": "No Rewards, Just Discipline",
       "text": "Unlike other apps that “motivate” with soft encouragement, Lock In is built for those who need tough accountability."
     }

@@ -12,12 +12,14 @@ export const Header = (props) => {
                   {props.data && props.data.title2}
                 </h1>
                 <p>{props.data ? props.data.paragraph : "Loading"}</p><div>
+                <div className="container-button">
                 <button className="btn-apple-download"></button>
                 <button className="btn-android-download"></button>
                 </div>
+                </div>
                 
                 </div>
-                <img src="img/header_phone.png" alt="app"/>
+                <img className="header-img" src="img/header_phone.png" alt="app"/>
         </div>
       </div>
     </header>
