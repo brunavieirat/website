@@ -447,7 +447,9 @@ const PrivacyPolicy = () => {
 
             <div id="infocollect" style={{ lineHeight: '1.5' }}>
               <span style={{ color: 'rgb(0, 0, 0)', fontSize: '13px' }}>
-                <h2>1. WHAT INFORMATION DO WE COLLECT?</h2>
+                <h2 style={{ fontSize: '18px' }}>
+                  1. WHAT INFORMATION DO WE COLLECT?
+                </h2>
               </span>
               <h3 id="personalinfo">Personal information you disclose to us</h3>
               <span style={{ color: 'rgb(127, 127, 127)' }}>
@@ -591,7 +593,9 @@ const PrivacyPolicy = () => {
 
                 <div id="infouse">
                   <span style={{ color: 'rgb(0, 0, 0)', fontSize: '13px' }}>
-                    <h2>2. HOW DO WE PROCESS YOUR INFORMATION?</h2>
+                    <h2 style={{ fontSize: '18px' }}>
+                      2. HOW DO WE PROCESS YOUR INFORMATION?
+                    </h2>
                   </span>
 
                   <p style={{ fontSize: '15px', color: 'rgb(89, 89, 89)' }}>
@@ -642,7 +646,7 @@ const PrivacyPolicy = () => {
               </div>
 
               <div id="whoshare" style={{ lineHeight: '1.5' }}>
-                <h2>
+                <h2 style={{ fontSize: '18px' }}>
                   3. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?
                 </h2>
                 <p>
@@ -665,7 +669,9 @@ const PrivacyPolicy = () => {
                 </ul>
 
                 <div id="sociallogins">
-                  <h2>4. HOW DO WE HANDLE YOUR SOCIAL LOGINS?</h2>
+                  <h2 style={{ fontSize: '18px' }}>
+                    4. HOW DO WE HANDLE YOUR SOCIAL LOGINS?
+                  </h2>
                   <p>
                     <strong>In Short:</strong> If you choose to register or log
                     in to our Services using a social media account, we may have
@@ -698,7 +704,9 @@ const PrivacyPolicy = () => {
             </div>
 
             <div id="inforetain" style={{ lineHeight: '1.5' }}>
-              <h2>5. HOW LONG DO WE KEEP YOUR INFORMATION?</h2>
+              <h2 style={{ fontSize: '18px' }}>
+                5. HOW LONG DO WE KEEP YOUR INFORMATION?
+              </h2>
               <p>
                 <strong>In Short:</strong> We keep your information for as long
                 as necessary to fulfill the purposes outlined in this Privacy
@@ -725,7 +733,9 @@ const PrivacyPolicy = () => {
               </p>
 
               <div id="infosafe">
-                <h2>6. HOW DO WE KEEP YOUR INFORMATION SAFE?</h2>
+                <h2 style={{ fontSize: '18px' }}>
+                  6. HOW DO WE KEEP YOUR INFORMATION SAFE?
+                </h2>
                 <p>
                   <strong>In Short:</strong> We aim to protect your personal
                   information through a system of organizational and technical
@@ -752,7 +762,9 @@ const PrivacyPolicy = () => {
               </div>
 
               <div id="infominors">
-                <h2>7. DO WE COLLECT INFORMATION FROM MINORS?</h2>
+                <h2 style={{ fontSize: '18px' }}>
+                  7. DO WE COLLECT INFORMATION FROM MINORS?
+                </h2>
                 <p>
                   <strong>In Short:</strong> We do not knowingly collect data
                   from or market to children under 18 years of age.
@@ -774,7 +786,9 @@ const PrivacyPolicy = () => {
                 </p>
               </div>
               <div id="privacyrights">
-                <h2>8. WHAT ARE YOUR PRIVACY RIGHTS?</h2>
+                <h2 style={{ fontSize: '18px' }}>
+                  8. WHAT ARE YOUR PRIVACY RIGHTS?
+                </h2>
                 <p>
                   <strong>In Short:</strong> You may review, change, or
                   terminate your account at any time, depending on your country,
@@ -821,7 +835,9 @@ const PrivacyPolicy = () => {
             </div>
 
             <div id="privacyrights">
-              <h2>9. CONTROLS FOR DO-NOT-TRACK FEATURES</h2>
+              <h2 style={{ fontSize: '18px' }}>
+                9. CONTROLS FOR DO-NOT-TRACK FEATURES
+              </h2>
               <p>
                 Most web browsers and some mobile operating systems and mobile
                 applications include a Do-Not-Track ("DNT") feature or setting
@@ -847,7 +863,7 @@ const PrivacyPolicy = () => {
             </div>
 
             <div id="uslaws">
-              <h2>
+              <h2 style={{ fontSize: '18px' }}>
                 10. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
               </h2>
               <p>
@@ -1526,7 +1542,9 @@ const PrivacyPolicy = () => {
             </div>
 
             <div id="policyupdates" style={{ lineHeight: '1.5' }}>
-              <h2>11. DO WE MAKE UPDATES TO THIS NOTICE?</h2>
+              <h2 style={{ fontSize: '18px' }}>
+                11. DO WE MAKE UPDATES TO THIS NOTICE?
+              </h2>
               <p style={{ color: 'rgb(89, 89, 89)', fontSize: '15px' }}>
                 <strong>In Short: </strong>Yes, we will update this notice as
                 necessary to stay compliant with relevant laws.
@@ -1544,7 +1562,9 @@ const PrivacyPolicy = () => {
             </div>
 
             <div id="contact" style={{ lineHeight: '1.5' }}>
-              <h2>12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h2>
+              <h2 style={{ fontSize: '18px' }}>
+                12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
+              </h2>
               <p style={{ color: 'rgb(89, 89, 89)', fontSize: '15px' }}>
                 If you have questions or comments about this notice, you may
                 email us at{' '}
@@ -1561,7 +1581,7 @@ const PrivacyPolicy = () => {
             </div>
 
             <div id="request" style={{ lineHeight: '1.5' }}>
-              <h2>
+              <h2 style={{ fontSize: '18px' }}>
                 13. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT
                 FROM YOU?
               </h2>
