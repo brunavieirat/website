@@ -1,13 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { Navigation } from "./components/navigation";
-import { Header } from "./components/header";
-import { About } from "./components/about";
-import { Features } from "./components/features";
-import { Footer } from "./components/footer";
-import JsonData from "./data/data.json";
+import React, { useEffect, useState } from "react";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
-import { Download } from './components/download';
+import { Route, Routes } from "react-router-dom";
+import JsonData from "./data/data.json";
+import Home from "./components/home";
+import PrivacyPolicy from "./components/privacyPolicy";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -16,21 +13,17 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
-  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     setLandingPageData(JsonData);
   }, []);
 
   return (
-    <div>
-      <Navigation />
-      <Header data={landingPageData.Header} />
-      <About data={landingPageData.About} />
-      <Features data={landingPageData.Features} />
-      <Download data={landingPageData.Features}/>
-      <Footer isOpen={isOpen} setIsOpen={setIsOpen}/>
-    </div>
+      <Routes>
+        <Route path="/" element={<Home data={landingPageData}/>} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      </Routes>
+      
   );
 };
 

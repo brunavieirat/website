@@ -1,8 +1,16 @@
 import React from 'react';
+import { Navigation } from './navigation';
 
 const PrivacyPolicy = () => {
   return (
 		<>
+    <Navigation/>
+    <div style={{
+  maxHeight: '100vh',
+  overflowY: 'auto',
+  padding: '54px'
+}}>
+  <h1>Privacy Policy</h1>
      <span
       style={{
         display: "block",
@@ -141,7 +149,7 @@ const PrivacyPolicy = () => {
           </span>
           <a data-custom-class="link" href="#personalinfo">
             <span style={{ color: 'rgb(0, 58, 250)', fontSize: '15px' }}>
-              <span data-custom-class="body_text">personal information you disclose to us</span>
+              <span data-custom-class="body_text"> {' '} personal information you disclose to us.</span>
             </span>
           </a>
         </span>
@@ -163,12 +171,12 @@ const PrivacyPolicy = () => {
 
 			<div style={{ lineHeight: '1.5' }}>
          <p style={{ fontSize: '15px' }}>
-        <strong>Do we collect any information from third parties?</strong>
+        <strong>Do we collect any information from third parties? </strong>
         We do not collect any information from third parties.
            </p>
 
         <p style={{ fontSize: '15px' }}>
-        <strong>How do we process your information?</strong>
+        <strong>How do we process your information? </strong>
         We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent. We process your information only when we have a valid legal reason to do so. Learn more about{' '}
         <a href="#infouse" style={{ color: 'rgb(0, 58, 250)', fontSize: '15px' }}>
           how we process your information
@@ -176,7 +184,7 @@ const PrivacyPolicy = () => {
         </p>
 
         <p style={{ fontSize: '15px' }}>
-        <strong>In what situations and with which parties do we share personal information?</strong>
+        <strong>In what situations and with which parties do we share personal information? </strong>
         We may share information in specific situations and with specific third parties. Learn more about{' '}
         <a href="#whoshare" style={{ color: 'rgb(0, 58, 250)', fontSize: '15px' }}>
           when and with whom we share your personal information
@@ -184,7 +192,7 @@ const PrivacyPolicy = () => {
         </p>
 
         <p style={{ fontSize: '15px' }}>
-        <strong>How do we keep your information safe?</strong>
+        <strong>How do we keep your information safe? </strong>
         We have adequate organizational and technical processes and procedures in place to protect your personal information. However, no electronic transmission over the internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorized third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information. Learn more about{' '}
         <a href="#infosafe" style={{ color: 'rgb(0, 58, 250)', fontSize: '15px' }}>
           how we keep your information safe
@@ -192,7 +200,7 @@ const PrivacyPolicy = () => {
         </p>
 
         <p style={{ fontSize: '15px' }}>
-        <strong>What are your rights?</strong>
+        <strong>What are your rights? </strong>
         Depending on where you are located geographically, the applicable privacy law may mean you have certain rights regarding your personal information. Learn more about{' '}
         <a href="#privacyrights" style={{ color: 'rgb(0, 58, 250)', fontSize: '15px' }}>
           your privacy rights
@@ -200,24 +208,15 @@ const PrivacyPolicy = () => {
         </p>
 
         <p style={{ fontSize: '15px' }}>
-        <strong>How do you exercise your rights?</strong>
+        <strong>How do you exercise your rights? </strong>
         The easiest way to exercise your rights is by submitting a{' '}
-        <a
-          href="https://app.termly.io/notify/769d08f1-c5f5-46f8-8f80-3b81ce91c839"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: 'rgb(0, 58, 250)', fontSize: '15px' }}
-        >
-          data subject access request
-        </a>
-        , or by contacting us. We will consider and act upon any request in accordance with applicable data protection laws.
+        
+          data subject access request, or by contacting us. We will consider and act upon any request in accordance with applicable data protection laws.
        </p>
 
         <p style={{ fontSize: '15px' }}>
-        Want to learn more about what we do with any information we collect?{' '}
-        <a href="#toc" style={{ color: 'rgb(0, 58, 250)', fontSize: '15px' }}>
-          Review the Privacy Notice in full
-        </a>.
+        Want to learn more about what we do with any information we collect?{' '}        
+          Review the Privacy Notice in full.
         </p>
 
         <div id="toc" style={{ lineHeight: '1.5' }}>
@@ -226,117 +225,85 @@ const PrivacyPolicy = () => {
         </h2>
         </div>
 
-        <ul style={{ fontSize: '15px' }}>
-        <li>
-          <a href="#infocollect" style={{ color: 'rgb(0, 58, 250)' }}>
-            1. WHAT INFORMATION DO WE COLLECT?
-          </a>
-        </li>
-        <li>
-          <a href="#infouse" style={{ color: 'rgb(0, 58, 250)' }}>
-            2. HOW DO WE PROCESS YOUR INFORMATION?
-          </a>
-        </li>
-        <li>
-          <a href="#whoshare" style={{ color: 'rgb(0, 58, 250)' }}>
-            3. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?
-          </a>
-        </li>
-        <li>
-          <a href="#sociallogins" style={{ color: 'rgb(0, 58, 250)' }}>
-            4. HOW DO WE HANDLE YOUR SOCIAL LOGINS?
-          </a>
-        </li>
-        <li>
-          <a href="#inforetain" style={{ color: 'rgb(0, 58, 250)' }}>
-            5. HOW LONG DO WE KEEP YOUR INFORMATION?
-          </a>
-        </li>
-        <li>
-          <a href="#infosafe" style={{ color: 'rgb(0, 58, 250)' }}>
-            6. HOW DO WE KEEP YOUR INFORMATION SAFE?
-          </a>
-        </li>
-       </ul>
-      </div>
+<ul style={{ fontSize: '15px', paddingLeft: '20px', lineHeight: '1.8' }}>
+  <li>
+    <a href="#infocollect" style={{ color: 'rgb(0, 58, 250)', textDecoration: 'none' }}>
+      1. WHAT INFORMATION DO WE COLLECT?
+    </a>
+  </li>
+  <li>
+    <a href="#infouse" style={{ color: 'rgb(0, 58, 250)', textDecoration: 'none' }}>
+      2. HOW DO WE PROCESS YOUR INFORMATION?
+    </a>
+  </li>
+  <li>
+    <a href="#whoshare" style={{ color: 'rgb(0, 58, 250)', textDecoration: 'none' }}>
+      3. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?
+    </a>
+  </li>
+  <li>
+    <a href="#sociallogins" style={{ color: 'rgb(0, 58, 250)', textDecoration: 'none' }}>
+      4. HOW DO WE HANDLE YOUR SOCIAL LOGINS?
+    </a>
+  </li>
+  <li>
+    <a href="#inforetain" style={{ color: 'rgb(0, 58, 250)', textDecoration: 'none' }}>
+      5. HOW LONG DO WE KEEP YOUR INFORMATION?
+    </a>
+  </li>
+  <li>
+    <a href="#infosafe" style={{ color: 'rgb(0, 58, 250)', textDecoration: 'none' }}>
+      6. HOW DO WE KEEP YOUR INFORMATION SAFE?
+    </a>
+  </li>
+  <li>
+    <a href="#infominors" style={{ color: 'rgb(0, 58, 250)', textDecoration: 'none' }}>
+      7. DO WE COLLECT INFORMATION FROM MINORS?
+    </a>
+  </li>
+  <li>
+    <a href="#privacyrights" style={{ color: 'rgb(0, 58, 250)', textDecoration: 'none' }}>
+      8. WHAT ARE YOUR PRIVACY RIGHTS?
+    </a>
+  </li>
+  <li>
+    <a href="#DNT" style={{ color: 'rgb(0, 58, 250)', textDecoration: 'none' }}>
+      9. CONTROLS FOR DO-NOT-TRACK FEATURES
+    </a>
+  </li>
+  <li>
+    <a href="#uslaws" style={{ color: 'rgb(0, 58, 250)', textDecoration: 'none' }}>
+      10. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
+    </a>
+  </li>
+  <li>
+    <a href="#policyupdates" style={{ color: 'rgb(0, 58, 250)', textDecoration: 'none' }}>
+      11. DO WE MAKE UPDATES TO THIS NOTICE?
+    </a>
+  </li>
+  <li>
+    <a href="#contact" style={{ color: 'rgb(0, 58, 250)', textDecoration: 'none' }}>
+      12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
+    </a>
+  </li>
+  <li>
+    <a href="#request" style={{ color: 'rgb(0, 58, 250)', textDecoration: 'none' }}>
+      13. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
+    </a>
+  </li>
+</ul>
 
-			<div style={{ lineHeight: '1.5' }}>
-        <span style={{ fontSize: '15px' }}>
-          <a data-custom-class="link" href="#infominors">
-            <span style={{ color: 'rgb(0, 58, 250)' }}>
-              7. DO WE COLLECT INFORMATION FROM MINORS?
-            </span>
-          </a>
-          <span style={{ color: 'rgb(127, 127, 127)' }}>
-            <span style={{ color: 'rgb(89, 89, 89)' }}>
-              <span data-custom-class="body_text">
-                <span style={{ color: 'rgb(89, 89, 89)' }}></span>
-              </span>
-            </span>
-          </span>
-        </span>
-      </div>
-			<div style={{ lineHeight: '1.5' }}>
-        <span style={{ fontSize: '15px' }}>
-          <span style={{ color: 'rgb(0, 58, 250)' }}>
-            <a data-custom-class="link" href="#privacyrights">
-              8. WHAT ARE YOUR PRIVACY RIGHTS?
-            </a>
-          </span>
-        </span>
-      </div>
-
-			<div style={{ lineHeight: '1.5' }}>
-        <span style={{ fontSize: '15px' }}>
-          <a data-custom-class="link" href="#DNT">
-            <span style={{ color: 'rgb(0, 58, 250)' }}>
-              9. CONTROLS FOR DO-NOT-TRACK FEATURES
-            </span>
-          </a>
-        </span>
-      </div>
-      <div style={{ lineHeight: '1.5' }}>
-        <span style={{ fontSize: '15px' }}>
-          <a data-custom-class="link" href="#uslaws">
-            <span style={{ color: 'rgb(0, 58, 250)' }}>
-              10. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
-            </span>
-          </a>
-        </span>
-      </div>
-			 <div style={{ lineHeight: '1.5' }}>
-        <span style={{ fontSize: '15px' }}>
-          <a data-custom-class="link" href="#policyupdates">
-            <span style={{ color: 'rgb(0, 58, 250)' }}>
-              11. DO WE MAKE UPDATES TO THIS NOTICE?
-            </span>
-          </a>
-        </span>
-      </div>
-      <div style={{ lineHeight: '1.5' }}>
-        <a data-custom-class="link" href="#contact">
-          <span style={{ color: 'rgb(0, 58, 250)', fontSize: '15px' }}>
-            12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
-          </span>
-        </a>
-      </div>
-      <div style={{ lineHeight: '1.5' }}>
-        <a data-custom-class="link" href="#request">
-          <span style={{ color: 'rgb(0, 58, 250)' }}>
-            13. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
-          </span>
-        </a>
-      </div>
+        </div>
 
 			<div id="infocollect" style={{ lineHeight: '1.5' }}>
-        <span style={{ color: 'rgb(0, 0, 0)', fontSize: '15px' }}>
+        <span style={{ color: 'rgb(0, 0, 0)', fontSize: '13px' }}>
           <h2>1. WHAT INFORMATION DO WE COLLECT?</h2>
         </span>
-        <h3>Personal information you disclose to us</h3>
+        <h3 id="personalinfo">Personal information you disclose to us</h3>
         <span style={{ color: 'rgb(127, 127, 127)' }}>
           <span style={{ color: 'rgb(89, 89, 89)', fontSize: '15px' }}>
             <strong>
-              <em>In Short:</em>
+              <em>In Short: </em>
             </strong>
           </span>
           <span style={{ fontSize: '15px', color: 'rgb(89, 89, 89)' }}>
@@ -351,7 +318,7 @@ const PrivacyPolicy = () => {
       </div>
 
       <div style={{ lineHeight: '1.5' }}>
-        <strong>Personal Information Provided by You.</strong>
+        <strong>Personal Information Provided by You. </strong>
         <span style={{ color: 'rgb(89, 89, 89)', fontSize: '15px' }}>
           The personal information that we collect depends on the context of your interactions with us and the Services, the choices you make, and the products and features you use. The personal information we collect may include the following:
         </span>
@@ -399,7 +366,7 @@ const PrivacyPolicy = () => {
       </div>
 
       <div style={{ lineHeight: '1.5' }}>
-        <strong>Application Data.</strong> If you use our application(s), we also may collect the following information if you choose to provide us with access or permission:
+        <strong> Application Data.</strong> If you use our application(s), we also may collect the following information if you choose to provide us with access or permission:
       </div>
 
       <ul>
@@ -430,9 +397,10 @@ const PrivacyPolicy = () => {
           We automatically collect certain information when you visit, use, or navigate the Services. This information does not reveal your specific identity (like your name or contact information) but may include device and usage information, such as your IP address, browser and device characteristics, operating system, language preferences, referring URLs, device name, country, location, information about how and when you use our Services, and other technical information. This information is primarily needed to maintain the security and operation of our Services, and for our internal analytics and reporting purposes.
         </p>
 
-        <h2 style={{ fontSize: '15px', color: 'rgb(0, 0, 0)' }}>
-          <strong>2. HOW DO WE PROCESS YOUR INFORMATION?</strong>
-        </h2>
+      <div id="infouse">
+        <span  style={{ color: 'rgb(0, 0, 0)', fontSize: '13px' }}>
+          <h2>2. HOW DO WE PROCESS YOUR INFORMATION?</h2>
+        </span>
 
         <p style={{ fontSize: '15px', color: 'rgb(89, 89, 89)' }}>
           <strong><em>In Short:</em></strong> We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent.
@@ -453,7 +421,11 @@ const PrivacyPolicy = () => {
           </li>
         </ul>
 
-         </div><div style={{ lineHeight: '1.5' }}>
+        </div>
+
+         </div>
+         
+         <div id="whoshare" style={{ lineHeight: '1.5' }}>
         <h2>3. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</h2>
        <p>
         <strong>In Short:</strong> We may share information in specific situations described in this section and/or with the following third parties.
@@ -467,6 +439,7 @@ const PrivacyPolicy = () => {
         	</li>
         </ul>
       
+      <div id="sociallogins">
          <h2>4. HOW DO WE HANDLE YOUR SOCIAL LOGINS?</h2>
         <p>
         <strong>In Short:</strong> If you choose to register or log in to our Services using a social media account, we may have access to certain information about you.
@@ -478,9 +451,10 @@ const PrivacyPolicy = () => {
         We will use the information we receive only for the purposes that are described in this Privacy Notice or that are otherwise made clear to you on the relevant Services. Please note that we do not control, and are not responsible for, other uses of your personal information by your third-party social media provider. We recommend that you review their privacy notice to understand how they collect, use, and share your personal information, and how you can set your privacy preferences on their sites and apps.
         </p>
       </div>
+      </div>
       </div> 
 
-		<div style={{ lineHeight: '1.5' }}>
+		<div id="inforetain" style={{ lineHeight: '1.5' }}>
       <h2>5. HOW LONG DO WE KEEP YOUR INFORMATION?</h2>
       <p><strong>In Short:</strong> We keep your information for as long as necessary to fulfill the purposes outlined in this Privacy Notice unless otherwise required by law.</p>
       <p>
@@ -493,7 +467,8 @@ const PrivacyPolicy = () => {
         When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize such information, or, if this is not possible (for example, because your personal information has been stored in backup archives), we will securely store your personal information and isolate it from any further processing until deletion is possible.
       </p>
 
-      <h2>6. HOW DO WE KEEP YOUR INFORMATION SAFE?</h2>
+<div id="infosafe">
+   <h2>6. HOW DO WE KEEP YOUR INFORMATION SAFE?</h2>
       <p><strong>In Short:</strong> We aim to protect your personal information through a system of organizational and technical security measures.</p>
       <p>
         We have implemented appropriate and reasonable technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorized third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information.
@@ -501,12 +476,17 @@ const PrivacyPolicy = () => {
       <p>
         Although we will do our best to protect your personal information, transmission of personal information to and from our Services is at your own risk. You should only access the Services within a secure environment.
       </p>
+      </div>
+     
 
+<div id="infominors">
       <h2>7. DO WE COLLECT INFORMATION FROM MINORS?</h2>
       <p><strong>In Short:</strong> We do not knowingly collect data from or market to children under 18 years of age.</p>
       <p>
         We do not knowingly collect, solicit data from, or market to children under 18 years of age, nor do we knowingly sell such personal information. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Services. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at <a href="mailto:privacy@lockinhq.com">privacy@lockinhq.com</a>.
       </p>
+      </div>
+      <div id="privacyrights">
 
       <h2>8. WHAT ARE YOUR PRIVACY RIGHTS?</h2>
       <p><strong>In Short:</strong> You may review, change, or terminate your account at any time, depending on your country, province, or state of residence.</p>
@@ -530,9 +510,10 @@ const PrivacyPolicy = () => {
         If you have questions or comments about your privacy rights, you may email us at <a href="mailto:privacy@lockinhq.com">privacy@lockinhq.com</a>.
       </p>
 		</div>
+    </div>
 
 
-      <div>
+      <div id="privacyrights">
         <h2>9. CONTROLS FOR DO-NOT-TRACK FEATURES</h2>
         <p>
           Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track ("DNT") feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage, no uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this Privacy Notice.
@@ -545,7 +526,7 @@ const PrivacyPolicy = () => {
         </p>
       </div>
 
-      <div>
+      <div id="uslaws">
         <h2>10. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</h2>
         <p>
           <strong><em>In Short:</em></strong> If you are a resident of California, Colorado, Connecticut, Delaware, Florida, Indiana, Iowa, Kentucky, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Tennessee, Texas, Utah, or Virginia, you may have the right to request access to and receive details about the personal information we maintain about you and how we have processed it, correct inaccuracies, get a copy of, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. More information is provided below.
@@ -558,7 +539,7 @@ const PrivacyPolicy = () => {
     
 
 <div>
-      <table style={{ width: "100%" }}>
+      <table style={{ width: "100%", marginBottom:'10px' }}>
         <tbody>
           <tr>
             <td
@@ -567,6 +548,7 @@ const PrivacyPolicy = () => {
                 borderLeft: "1px solid black",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               <strong>Category</strong>
@@ -575,7 +557,8 @@ const PrivacyPolicy = () => {
               style={{
                 width: "51.4385%",
                 borderTop: "1px solid black",
-                borderRight: "1px solid black",
+                borderRight: "1px solid black",                
+                padding: "5px"
               }}
             >
               <strong>Examples</strong>
@@ -586,6 +569,7 @@ const PrivacyPolicy = () => {
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
                 textAlign: "center",
+                padding: "5px"                
               }}
             >
               <strong>Collected</strong>
@@ -598,6 +582,7 @@ const PrivacyPolicy = () => {
                 borderLeft: "1px solid black",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               A. Identifiers
@@ -607,6 +592,7 @@ const PrivacyPolicy = () => {
                 width: "51.4385%",
                 borderTop: "1px solid black",
                 borderRight: "1px solid black",
+                padding: "5px"
               }}
             >
               Contact details, such as real name, alias, postal address, telephone or mobile contact number, unique personal identifier, online identifier, Internet Protocol address, email address, and account name
@@ -618,6 +604,7 @@ const PrivacyPolicy = () => {
                 verticalAlign: "middle",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               NO
@@ -630,6 +617,7 @@ const PrivacyPolicy = () => {
                 borderLeft: "1px solid black",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               B. Personal information as defined in the California Customer Records statute
@@ -639,6 +627,7 @@ const PrivacyPolicy = () => {
                 width: "51.4385%",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               Name, contact information, education, employment, employment history, and financial information
@@ -649,6 +638,7 @@ const PrivacyPolicy = () => {
                 textAlign: "center",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               NO
@@ -661,6 +651,7 @@ const PrivacyPolicy = () => {
                 borderLeft: "1px solid black",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               C. Protected classification characteristics under state or federal law
@@ -670,6 +661,7 @@ const PrivacyPolicy = () => {
                 width: "51.4385%",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               Gender, age, date of birth, race and ethnicity, national origin, marital status, and other demographic data
@@ -680,6 +672,7 @@ const PrivacyPolicy = () => {
                 textAlign: "center",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               NO
@@ -692,6 +685,7 @@ const PrivacyPolicy = () => {
                 borderLeft: "1px solid black",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               D. Commercial information
@@ -701,6 +695,7 @@ const PrivacyPolicy = () => {
                 width: "51.4385%",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               Transaction information, purchase history, financial details, and payment information
@@ -711,6 +706,7 @@ const PrivacyPolicy = () => {
                 textAlign: "center",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               NO
@@ -723,6 +719,7 @@ const PrivacyPolicy = () => {
                 borderLeft: "1px solid black",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               E. Biometric information
@@ -732,6 +729,7 @@ const PrivacyPolicy = () => {
                 width: "51.4385%",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               Fingerprints and voiceprints
@@ -742,6 +740,7 @@ const PrivacyPolicy = () => {
                 textAlign: "center",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               NO
@@ -754,6 +753,7 @@ const PrivacyPolicy = () => {
                 borderLeft: "1px solid black",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               F. Internet or other similar network activity
@@ -763,6 +763,7 @@ const PrivacyPolicy = () => {
                 width: "51.4385%",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               Browsing history, search history, online behavior, interest data, and interactions with our and other websites, applications, systems, and advertisements
@@ -773,6 +774,7 @@ const PrivacyPolicy = () => {
                 textAlign: "center",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               NO
@@ -785,6 +787,7 @@ const PrivacyPolicy = () => {
                 borderLeft: "1px solid black",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               G. Geolocation data
@@ -794,6 +797,7 @@ const PrivacyPolicy = () => {
                 width: "51.4385%",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               Device location
@@ -804,6 +808,7 @@ const PrivacyPolicy = () => {
                 textAlign: "center",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               NO
@@ -816,6 +821,7 @@ const PrivacyPolicy = () => {
                 borderLeft: "1px solid black",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               H. Audio, electronic, sensory, or similar information
@@ -825,6 +831,7 @@ const PrivacyPolicy = () => {
                 width: "51.4385%",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               Images and audio, video or call recordings created in connection with our business activities
@@ -835,6 +842,7 @@ const PrivacyPolicy = () => {
                 textAlign: "center",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               NO
@@ -848,6 +856,7 @@ const PrivacyPolicy = () => {
                 borderLeft: "1px solid black",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               I. Professional or employment-related information
@@ -857,6 +866,7 @@ const PrivacyPolicy = () => {
                 width: "51.4385%",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               Business contact details in order to provide tou our Services at a business level or job title, work history, and professional qualisfications if you apply for a job with us
@@ -867,6 +877,7 @@ const PrivacyPolicy = () => {
                 textAlign: "center",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               NO
@@ -880,6 +891,7 @@ const PrivacyPolicy = () => {
                 borderLeft: "1px solid black",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               J. Education Information
@@ -889,6 +901,7 @@ const PrivacyPolicy = () => {
                 width: "51.4385%",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               Student recorods and directory information
@@ -899,6 +912,7 @@ const PrivacyPolicy = () => {
                 textAlign: "center",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               NO
@@ -911,6 +925,7 @@ const PrivacyPolicy = () => {
                 borderLeft: "1px solid black",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               K. Inferences drawn from collected personal information
@@ -920,6 +935,7 @@ const PrivacyPolicy = () => {
                 width: "51.4385%",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               Inferences drawn from any of the collected personal information listed above to create a profile or sumary about, for exmple, an individual's preferences and characteristics
@@ -930,6 +946,7 @@ const PrivacyPolicy = () => {
                 textAlign: "center",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                padding: "5px"
               }}
             >
               NO
@@ -942,6 +959,8 @@ const PrivacyPolicy = () => {
                 borderLeft: "1px solid black",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                borderBottom: "1px solid black",
+                padding: "5px"
               }}
             >
               L. Sensitive personal information
@@ -951,6 +970,8 @@ const PrivacyPolicy = () => {
                 width: "51.4385%",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                borderBottom: "1px solid black",
+                padding: "5px"
               }}
             >
               
@@ -961,6 +982,8 @@ const PrivacyPolicy = () => {
                 textAlign: "center",
                 borderRight: "1px solid black",
                 borderTop: "1px solid black",
+                borderBottom: "1px solid black",
+                padding: "5px"
               }}
             >
               NO
@@ -996,7 +1019,7 @@ const PrivacyPolicy = () => {
         Sources of Personal Information
       </h3>
       <p style={{ fontSize: '15px' }}>
-        Learn more about the sources of personal information we collect in 
+        Learn more about the sources of personal information we collect in {' '}
         <a href="#infocollect" style={{ color: 'rgb(0, 58, 250)' }}>
           WHAT INFORMATION DO WE COLLECT?
         </a>
@@ -1005,7 +1028,7 @@ const PrivacyPolicy = () => {
         How We Use and Share Personal Information
       </h3>
       <p style={{ fontSize: '15px' }}>
-        Learn more about how we use your personal information in the section, 
+        Learn more about how we use your personal information in the section {' '}
         <a href="#infouse" style={{ color: 'rgb(0, 58, 250)' }}>
           HOW DO WE PROCESS YOUR INFORMATION?
         </a>
@@ -1014,7 +1037,7 @@ const PrivacyPolicy = () => {
         <strong>Will your information be shared with anyone else?</strong>
       </div>
       <p style={{ fontSize: '15px', color: 'rgb(89, 89, 89)' }}>
-        We may disclose your personal information with our service providers pursuant to a written contract between us and each service provider. Learn more about how we disclose personal information to 
+        We may disclose your personal information with our service providers pursuant to a written contract between us and each service provider. Learn more about how we disclose personal information to {' '}
         <a href="#whoshare" style={{ color: 'rgb(0, 58, 250)' }}>
           WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?
         </a>
@@ -1090,12 +1113,10 @@ const PrivacyPolicy = () => {
             <h3>How to Exercise Your Rights</h3>
             <span style={{ fontSize: '15px', color: 'rgb(89, 89, 89)' }}>
               To exercise these rights, you can contact us by submitting a{' '}
-              <a href="https://app.termly.io/notify/769d08f1-c5f5-46f8-8f80-3b81ce91c839" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(0, 58, 250)' }}>
-                data subject access request
-              </a>, by emailing us at{' '}
+                data subject access request, by emailing us at{' '}
               <a href="mailto:privacy@lockinhq.com" style={{ color: 'rgb(0, 58, 250)' }}>
                 privacy@lockinhq.com
-              </a>, or by calling toll-free at{' '}
+              </a>, or by calling at{' '}
               <a href="tel:1-321-999-1845" style={{ color: 'rgb(0, 58, 250)' }}>
                 1-321-999-1845
               </a>.
@@ -1118,7 +1139,7 @@ const PrivacyPolicy = () => {
           </div>
          
   <div id="policyupdates" style={{ lineHeight: '1.5' }}>
-        <h2 style={{ color: 'rgb(89, 89, 89)', fontSize: '15px' }}>11. DO WE MAKE UPDATES TO THIS NOTICE?</h2>
+        <h2>11. DO WE MAKE UPDATES TO THIS NOTICE?</h2>
         <p style={{ color: 'rgb(89, 89, 89)', fontSize: '15px' }}>
           <strong>In Short: </strong>Yes, we will update this notice as necessary to stay compliant with relevant laws.
         </p>
@@ -1128,7 +1149,7 @@ const PrivacyPolicy = () => {
       </div>
 
       <div id="contact" style={{ lineHeight: '1.5' }}>
-        <h2 style={{ color: 'rgb(89, 89, 89)', fontSize: '15px' }}>12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h2>
+        <h2>12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h2>
         <p style={{ color: 'rgb(89, 89, 89)', fontSize: '15px' }}>
           If you have questions or comments about this notice, you may email us at{' '}
           <a href="mailto:privacy@lockinhq.com" style={{ color: 'rgb(89, 89, 89)', fontSize: '15px' }}>
@@ -1140,7 +1161,7 @@ const PrivacyPolicy = () => {
       </div>
 
       <div id="request" style={{ lineHeight: '1.5' }}>
-        <h2 style={{ color: 'rgb(89, 89, 89)', fontSize: '15px' }}>
+        <h2>
           13. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
         </h2>
         <p style={{ color: 'rgb(89, 89, 89)', fontSize: '15px' }}>
@@ -1148,21 +1169,13 @@ const PrivacyPolicy = () => {
           access to the personal information we collect from you, details about how we have processed it, correct
           inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our
           processing of your personal information. These rights may be limited in some circumstances by applicable law.
-          To request to review, update, or delete your personal information, please fill out and submit a{' '}
-          <a
-            href="https://app.termly.io/notify/769d08f1-c5f5-46f8-8f80-3b81ce91c839"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: 'rgb(0, 58, 250)', fontSize: '15px' }}
-          >
-            data subject access request
-          </a>.
+          To request to review, update, or delete your personal information, please fill out and submit a data subject access request.
         </p>
       </div>
 
 
 
-
+</div>
 
 
 		</div>
