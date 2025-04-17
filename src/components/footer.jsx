@@ -25,9 +25,14 @@ export const Footer = (props) => {
             gap: '16px',
             flexWrap: 'wrap',
           }}>
-          <a href="/terms-of-service" alt="Terms and conditions">
+          <Link
+            to="/terms-of-service"
+            style={{
+              cursor: 'pointer',
+              textDecoration: 'none',
+            }}>
             Terms of Service
-          </a>
+          </Link>
           <Link
             to="/privacy-policy"
             style={{
