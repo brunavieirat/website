@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-import SmoothScroll from "smooth-scroll";
-import "./App.css";
-import { Route, Routes } from "react-router-dom";
-import JsonData from "./data/data.json";
-import Home from "./components/home";
-import PrivacyPolicy from "./components/privacyPolicy";
+import React, { useEffect, useState } from 'react';
+import SmoothScroll from 'smooth-scroll';
+import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import JsonData from './data/data.json';
+import Home from './components/home';
+import PrivacyPolicy from './components/privacyPolicy';
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -19,11 +19,10 @@ const App = () => {
   }, []);
 
   return (
-      <Routes>
-        <Route path="/" element={<Home data={landingPageData}/>} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-      </Routes>
-      
+    <Routes>
+      <Route path="/" element={<Home data={landingPageData} />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+    </Routes>
   );
 };
 
