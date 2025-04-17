@@ -14,7 +14,7 @@ const PrivacyPolicy = () => {
             padding: '54px',
             boxSizing: 'border-box',
           }}>
-          <h1>Privacy Policy</h1>
+          <h1 className="h1-policies">Privacy Policy</h1>
           <span
             style={{
               display: 'block',

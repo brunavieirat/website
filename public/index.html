@@ -1,16 +1,4 @@
 <head>
-  <script>
-    (function () {
-      const path = window.location.pathname;
-      const hash = window.location.hash;
-
-      // Ignora se já estiver na raiz ou com hash
-      if (!hash && path !== '/' && !path.startsWith('/api')) {
-        const redirectTo = '/#' + path;
-        window.location.replace(redirectTo);
-      }
-    })();
-  </script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="shortcut icon" href="img/lock.png" type="image/x-icon" />

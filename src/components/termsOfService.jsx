@@ -17,7 +17,9 @@ const TermsOfService = () => {
             lineHeight: '1.6',
             textAlign: 'left',
           }}>
-          <h1 style={{ textAlign: 'left' }}>Terms of Service</h1>
+          <h1 className="h1-policies" style={{ textAlign: 'left' }}>
+            Terms of Service
+          </h1>
           <div data-custom-class="body">
             <section>
               <h2 style={{ textAlign: 'left' }}>1. Acceptance of Terms</h2>
