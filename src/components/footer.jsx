@@ -6,28 +6,45 @@ export const Footer = (props) => {
   const { isOpen, setIsOpen } = props;
 
   return (
-    <div>
-      <div id="footer">
-        <hr />
-        <div className="footer">
-          <div>
-            {/* <a href="/" alt="Terms and conditions">Terms and conditions</a> */}
-            {/* <a href="/" onClick={(e) => { e.preventDefault();
-           setIsOpen(true)}} alt="Privacy Policy">Privacy Policy</a> */}
-            <Link
-              style={{
-                cursor: 'pointer',
-              }}
-              to="/privacy-policy">
-              Privacy Policy
-            </Link>
-          </div>
-          <p id="copyright">Copyright &copy; Lock In. All Rights Reserved.</p>
-
-          {/* Modal */}
-          <TermsModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
+    <div id="footer" style={{ padding: '20px 0', width: '100%' }}>
+      <hr />
+      <div
+        className="footer"
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          gap: '10px',
+          fontSize: '14px',
+          padding: '10px 20px',
+        }}>
+        <div
+          style={{
+            display: 'flex',
+            gap: '16px',
+            flexWrap: 'wrap',
+          }}>
+          <a href="/terms-of-service" alt="Terms and conditions">
+            Terms of Service
+          </a>
+          <Link
+            to="/privacy-policy"
+            style={{
+              cursor: 'pointer',
+              textDecoration: 'none',
+            }}>
+            Privacy Policy
+          </Link>
         </div>
+
+        <p id="copyright" style={{ margin: 0 }}>
+          Copyright &copy; Lock In. All Rights Reserved.
+        </p>
       </div>
+
+      {/* Modal */}
+      <TermsModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
     </div>
   );
 };
