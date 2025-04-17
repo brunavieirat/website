@@ -17,7 +17,7 @@ const Home = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
+    <div style={{ overflowX: 'hidden' }}>
       <Navigation />
       <Header data={data.Header} />
       <About data={data.About} />
